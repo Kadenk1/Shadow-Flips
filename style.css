@@ -334,45 +334,45 @@ body {
   font-size: 14px;
 }
 
-/* ================= MOBILE CENTERING ONLY ================= */
+/* ================= MOBILE HERO FIX ================= */
 @media (max-width: 768px) {
 
-  /* Center all sections */
-  section {
-    display: flex;
+  .hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 64px 20px;
+    gap: 28px;
   }
 
-  /* HERO */
-  .hero {
-    align-items: center;
+  .hero-text {
+    max-width: 360px;
   }
 
-  /* FEATURES */
-  .feature-grid {
-    justify-items: center;
+  .hero-text h1 {
+    font-size: 36px;
+    line-height: 1.15;
   }
 
-  /* PRICING */
-  .pricing-grid {
-    justify-items: center;
+  .hero-text p {
+    font-size: 15px;
+    margin-top: 12px;
   }
 
-  /* FAQ */
-  .faq-items {
-    align-items: center;
+  .hero .cta-btn {
+    margin-top: 18px;
   }
 
-  .faq-item {
-    width: 100%;
+  .hero-image {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
   }
 
-  /* FOOTER */
-  .footer-inner {
-    align-items: center;
-    text-align: center;
+  .hero-image img {
+    width: 260px;
+    max-width: 100%;
+    transform: none; /* removes desktop offset */
   }
 }
 
