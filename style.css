@@ -334,19 +334,30 @@ body {
   font-size: 14px;
 }
 
-/* ================= MOBILE HERO FIX ================= */
+/* ================= MOBILE FORCE CENTER ================= */
 @media (max-width: 768px) {
 
-  .hero {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* FORCE ALL MAIN SECTIONS TO CENTER */
+  .hero,
+  .features,
+  .pricing,
+  .faq,
+  .footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 64px 20px;
-    gap: 28px;
   }
 
+  /* HERO CONTENT */
   .hero-text {
+    width: 100%;
     max-width: 360px;
+    margin: 0 auto;
   }
 
   .hero-text h1 {
@@ -360,19 +371,35 @@ body {
   }
 
   .hero .cta-btn {
-    margin-top: 18px;
+    margin: 20px auto 0;
   }
 
+  /* HERO IMAGE */
   .hero-image {
-    margin-top: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 28px;
   }
 
   .hero-image img {
     width: 260px;
     max-width: 100%;
-    transform: none; /* removes desktop offset */
+    transform: none !important;
+  }
+
+  /* GRIDS */
+  .feature-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+    justify-items: center;
+  }
+
+  /* FOOTER */
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
