@@ -334,54 +334,30 @@ body {
   font-size: 14px;
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 900px) {
-
-  /* GLOBAL */
-  body {
-    overflow-x: hidden;
-  }
-
-  section {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-  }
-
-  /* NAVBAR */
-  .navbar {
-    padding: 18px 24px;
-  }
-
-  .nav-links {
-    display: none; /* hide desktop links */
-  }
-
-  .navbar .cta-btn {
-    padding: 10px 16px;
-    font-size: 14px;
-  }
+/* ================= MOBILE ONLY ================= */
+@media (max-width: 768px) {
 
   /* HERO */
   .hero {
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 80px 24px;
+    padding: 72px 24px;
   }
 
   .hero-text h1 {
-    font-size: 38px;
+    font-size: 36px;
+    line-height: 1.15;
   }
 
   .hero-text p {
     font-size: 15px;
   }
 
-  .hero-image {
-    margin-top: 40px;
-  }
-
   .hero-image img {
     width: 260px;
+    max-width: 100%;
+    margin-top: 32px;
   }
 
   /* FEATURES */
@@ -390,53 +366,23 @@ body {
     gap: 20px;
   }
 
-  .feature-card {
-    transform: none;
-  }
-
   /* PRICING */
-  .pricing {
-    padding-top: 60px;
-  }
-
   .pricing-grid {
     grid-template-columns: 1fr;
     max-width: 420px;
-  }
-
-  .pricing-card {
-    padding: 32px;
-  }
-
-  .price {
-    font-size: 38px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* FAQ */
-  .faq {
-    padding: 60px 24px;
-  }
-
-  .faq h2 {
-    font-size: 34px;
-  }
-
   .faq-items {
     max-width: 100%;
   }
 
   /* FOOTER */
-  .footer {
-    padding: 60px 24px 30px;
-  }
-
   .footer-inner {
     flex-direction: column;
-    gap: 40px;
-  }
-
-  .footer-bottom {
-    font-size: 13px;
+    gap: 32px;
   }
 }
 
